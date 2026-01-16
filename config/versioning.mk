@@ -55,3 +55,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.miku.buildtype=$(TARGET_MIKU_BUILD_VARIANT) \
     ro.miku.maintainer=$(TARGET_MIKU_MASTER)
 
+# Feature
+PERF_ANIM_OVERRIDE ?= false
+
+# Feature proerties
+PRODUCT_PRODUCT_PROPERTIES += \
+persist.sys.activity_anim_perf_override=$(PERF_ANIM_OVERRIDE)
