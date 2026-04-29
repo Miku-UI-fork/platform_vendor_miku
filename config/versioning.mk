@@ -50,6 +50,10 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.system.miku.version=$(PLATFORM_MIKU_VERSION)
 
+PERF_ANIM_OVERRIDE ?= false
+PRODUCT_PRODUCT_PROPERTIES += \
+  persist.sys.activity_anim_perf_override=$(PERF_ANIM_OVERRIDE)
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.miku.version=$(MIKU_ROM_VERSION) \
     ro.miku.buildtype=$(TARGET_MIKU_BUILD_VARIANT) \
